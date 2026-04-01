@@ -15,14 +15,14 @@ export default function Home() {
     <main className="overflow-hidden">
       <Navbar />
       <Hero />
-      <Trusted />
+      <section id="features" className="scroll-mt-20"><Trusted /></section>
       <HowItWorks />
-      <Benefits />
+      <section id="benefits" className="scroll-mt-20"><Benefits /></section>
       <ProductOverview />
-      <Comparison />
-      <Pricing />
+      <section id="comparison" className="scroll-mt-20"><Comparison /></section>
+      <section id="pricing" className="scroll-mt-20"><Pricing /></section>
       <Testimonials />
-      <FAQ />
+      <section id="faq" className="scroll-mt-20"><FAQ /></section>
       <Footer />
     </main>
   );

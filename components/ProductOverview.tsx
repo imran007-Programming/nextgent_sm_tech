@@ -14,7 +14,7 @@ export default function ProductOverview() {
     <section className="bg-white py-10 px-6 overflow-hidden">
       <div className="max-w-[100vw] mx-auto">
         <div className="bg-[#0F0F0F] rounded-3xl py-20 px-2 lg:px-6 overflow-hidden">
-          <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-16 w-full">
+          <div className="max-w-4xl mx-auto flex flex-col items-center text-center gap-16 w-full">
             <motion.div
               variants={fadeUp}
               initial="hidden"
@@ -72,7 +72,7 @@ export default function ProductOverview() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className="absolute -right-6 bottom-10 z-10 hidden lg:block"
+                className="absolute -right-40 bottom-10 z-10 hidden lg:block"
               >
                 <Image
                   src="/ui-animation.png"
@@ -84,7 +84,7 @@ export default function ProductOverview() {
               </motion.div>
 
               <div
-                className="relative rounded-2xl border-4 border-[#A4DFC0] w-full aspect-video"
+                className="relative rounded-2xl border-4 border-[#A4DFC0] w-full aspect-[16/10]"
                 style={{ boxShadow: "0 0 120px 40px #112C1E" }}
               >
                 <Image

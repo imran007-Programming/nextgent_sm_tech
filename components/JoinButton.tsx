@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 export default function JoinButton({ className = "" }: { className?: string }) {
   return (
     <motion.a
-      href="#join"
+      href="https://webflow.com/templates/designers/olynex-agency"
+      target="_blank"
+      rel="noopener noreferrer"
       initial="rest"
       whileHover="hover"
       animate="rest"

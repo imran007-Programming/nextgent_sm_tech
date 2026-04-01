@@ -63,7 +63,10 @@ export default function Hero() {
             plan, prioritize, and complete work faster without stress.
           </p>
 
-          <button className="relative mt-8 inline-flex items-center justify-center gap-2 rounded-2xl overflow-hidden px-7 py-3 sm:px-10 sm:py-4 text-sm sm:text-base font-semibold bg-green-500 text-black group">
+          <button
+            className="relative mt-8 inline-flex items-center justify-center gap-2 rounded-2xl overflow-hidden px-7 py-3 sm:px-10 sm:py-4 text-sm sm:text-base font-semibold text-black group"
+            style={{ backgroundColor: "#1CAF61" }}
+          >
             <span className="absolute inset-0 bg-white translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out" />
             <span className="relative z-10 group-hover:text-black transition-colors duration-500">
               Get Template
