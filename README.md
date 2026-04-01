@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexgent
+
+A modern, responsive landing page for **Nexgent** — a smart task management platform built with Next.js, Tailwind CSS, and Framer Motion.
+
+---
+
+## Tech Stack
+
+- **Framework** — [Next.js 15](https://nextjs.org/)
+- **Styling** — [Tailwind CSS](https://tailwindcss.com/)
+- **Animations** — [Framer Motion](https://www.framer.com/motion/)
+- **Icons** — [Lucide React](https://lucide.dev/)
+- **Font** — [Satoshi](https://fontshare.com/fonts/satoshi) via Fontshare + Geist
+
+---
+
+## Project Structure
+
+```
+nextgen/
+├── app/
+│   ├── layout.tsx          # Root layout, metadata, fonts
+│   ├── page.tsx            # Main page with all sections
+│   └── globals.css         # Global styles
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx      # Navigation bar
+│   │   ├── Footer.tsx      # Footer with CTA, links, newsletter
+│   │   └── JoinButton.tsx  # Reusable animated join button
+│   ├── sections/
+│   │   ├── Hero.tsx        # Hero section with background image
+│   │   ├── Trusted.tsx     # Trusted brands + feature grid
+│   │   ├── HowItWorks.tsx  # 3-step how it works section
+│   │   ├── Benefits.tsx    # Benefits grid
+│   │   ├── ProductOverview.tsx  # Dashboard showcase
+│   │   ├── Comparison.tsx  # Nexgent vs others comparison
+│   │   ├── Pricing.tsx     # Pricing plans
+│   │   ├── Testimonials.tsx # Testimonial carousel
+│   │   └── FAQ.tsx         # Accordion FAQ
+│   └── ui/
+│       ├── spotlight.tsx
+│       └── container-scroll-animation.tsx
+├── data/
+│   ├── benefits.ts         # Benefits array
+│   ├── comparison.ts       # Pain points & Nexgent features
+│   ├── faqs.ts             # FAQ questions & answers
+│   ├── plans.ts            # Pricing plans
+│   ├── reviews.ts          # Testimonial reviews
+│   └── steps.ts            # How it works steps
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/                 # Static assets (images, SVGs)
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd nextgen
+
+# Install dependencies
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Sections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Section | Description |
+|---|---|
+| Navbar | Transparent overlay nav with smooth scroll links |
+| Hero | Full-screen background with animated CTA button |
+| Trusted | Brand logos + feature grid cards |
+| How It Works | 3-step process with animated images |
+| Benefits | 6-card benefits grid |
+| Product Overview | Dashboard image showcase on dark background |
+| Comparison | Side-by-side Nexgent vs other platforms |
+| Pricing | 3-tier pricing cards with hover animations |
+| Testimonials | Animated review carousel |
+| FAQ | Accordion with smooth open/close animation |
+| Footer | CTA banner, logo, contact info, newsletter |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Fully responsive for mobile, tablet, and desktop
+- Smooth scroll navigation
+- Framer Motion page animations
+- Green shutter hover effects on buttons
+- Animated arrow icon transitions (MoveUpRight → MoveRight)
+- Data separated from components in `/data` folder
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Credits
+
+- Designed by **Olynex**
+- Powered by **Webflow**
+- Template: [Olynex Agency](https://webflow.com/templates/designers/olynex-agency)
+
+---
+
+© 2026 Nexgent. All rights reserved.

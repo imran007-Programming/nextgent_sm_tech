@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { Spotlight } from "@/components/ui/spotlight";
+
 import { MoveUpRight, MoveRight } from "lucide-react";
 import Image from "next/image";
 
