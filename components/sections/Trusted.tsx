@@ -110,10 +110,13 @@ export default function Trusted() {
               className="w-full sm:w-1/2 bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 min-h-[260px] shadow-sm"
             >
               <h3 className="text-xl sm:text-3xl font-medium text-gray-900 mb-3">
+                {" "}
+                Smart Task Management
               </h3>
               <p className="text-[#5D5D5D] text-sm sm:text-lg leading-relaxed">
                 <br />
-                priorities, and labels for better productivity.
+                Create, assign, and organize tasks with due dates, priorities,
+                and labels for better productivity.
               </p>
               <div className="mt-6 relative w-[85%] mx-auto overflow-hidden p-4">
                 <Image
@@ -263,23 +266,54 @@ export default function Trusted() {
               <div className="mt-6 flex flex-col items-center gap-3 px-8">
                 <motion.div
                   className="w-full"
-                  variants={{ hidden: { x: -40 }, visible: { x: -40 }, hovered: { x: 0 } }}
+                  variants={{
+                    hidden: { x: -40 },
+                    visible: { x: -40 },
+                    hovered: { x: 0 },
+                  }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                 >
-                  <Image src="/projectmanage.svg" alt="Project Manage" width={220} height={120} className="w-full rounded-xl object-cover" />
+                  <Image
+                    src="/projectmanage.svg"
+                    alt="Project Manage"
+                    width={220}
+                    height={120}
+                    className="w-full rounded-xl object-cover"
+                  />
                 </motion.div>
-                <Image src="/inprogress.webp" alt="In Progress" width={220} height={120} className="w-full rounded-xl object-cover" />
+                <Image
+                  src="/inprogress.webp"
+                  alt="In Progress"
+                  width={220}
+                  height={120}
+                  className="w-full rounded-xl object-cover"
+                />
                 <motion.div
                   className="w-full"
-                  variants={{ hidden: { x: 40 }, visible: { x: 40 }, hovered: { x: 0 } }}
+                  variants={{
+                    hidden: { x: 40 },
+                    visible: { x: 40 },
+                    hovered: { x: 0 },
+                  }}
                   transition={{ duration: 0.4, ease: "easeOut" }}
                 >
-                  <Image src="/projectmanage (2).svg" alt="Project Manage 2" width={220} height={120} className="w-full rounded-xl object-cover" />
+                  <Image
+                    src="/projectmanage (2).svg"
+                    alt="Project Manage 2"
+                    width={220}
+                    height={120}
+                    className="w-full rounded-xl object-cover"
+                  />
                 </motion.div>
               </div>
               <div className="mt-6">
-                <h3 className="text-3xl font-medium text-gray-900 mb-3">Smart Notifications</h3>
-                <p className="text-[#5D5D5D] text-lg leading-relaxed">Never miss a task with real-time reminders and alerts that keep you on schedule.</p>
+                <h3 className="text-3xl font-medium text-gray-900 mb-3">
+                  Smart Notifications
+                </h3>
+                <p className="text-[#5D5D5D] text-lg leading-relaxed">
+                  Never miss a task with real-time reminders and alerts that
+                  keep you on schedule.
+                </p>
               </div>
             </motion.div>
           </div>

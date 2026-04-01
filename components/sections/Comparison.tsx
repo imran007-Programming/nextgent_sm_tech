@@ -3,31 +3,12 @@
 import { motion } from "framer-motion";
 import { GitCompare, SquareCheckBig, FileX } from "lucide-react";
 import Image from "next/image";
+import { painPoints, nexgentFeatures } from "@/data/comparison";
 
 const fadeUp = {
   hidden: { y: 40, opacity: 0 },
   visible: { y: 0, opacity: 1 },
 };
-
-const painPoints = [
-  "Interfaces that slow teams down",
-  "Limited tasks and workflows",
-  "Poor integration tools and platform",
-  "Weak collaboration features",
-  "Basic reports with little insight",
-  "Shallow reporting and insights",
-  "Poor Analytics & Reports",
-];
-
-const nexgentFeatures = [
-  "Interfaces that slow teams down",
-  "Seamless integration with 200+",
-  "Real-time progress tracking",
-  "Advanced productivity analytics",
-  "Faster task completion",
-  "Productivity and performance",
-  "Advanced Analytics & Reports",
-];
 
 export default function Comparison() {
   return (

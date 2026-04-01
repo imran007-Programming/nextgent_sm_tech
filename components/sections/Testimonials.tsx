@@ -2,37 +2,14 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageSquareQuote, ArrowLeft, ArrowRight, Star } from "lucide-react";
+import { MessageSquareQuote, ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { reviews } from "@/data/reviews";
 
 const fadeUp = {
   hidden: { y: 40, opacity: 0 },
   visible: { y: 0, opacity: 1 },
 };
-
-const reviews = [
-  {
-    text: "This tool completely transformed how our team works. Everything is clear and organized, so we always know who's responsible for what and when things are due. As a result, we meet deadlines more consistently and stay focused on our priorities. Its very helpful my works.",
-    name: " Edward Lawson",
-    role: "One request",
-    initials: "SJ",
-    color: "bg-indigo-500",
-  },
-  {
-    text: "This tool completely transformed how our team works. Everything is clear and organized, so we always know who's responsible for what and when things are due. As a result, we meet deadlines more consistently and stay focused on our priorities. Its very helpful my works.",
-    name: " Edward Lawson",
-    role: "One request",
-    initials: "ML",
-    color: "bg-[#1CAF61]",
-  },
-  {
-    text: "This tool completely transformed how our team works. Everything is clear and organized, so we always know who's responsible for what and when things are due. As a result, we meet deadlines more consistently and stay focused on our priorities. Its very helpful my works.",
-    name: " Edward Lawson",
-    role: "One request",
-    initials: "PS",
-    color: "bg-orange-500",
-  },
-];
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
@@ -67,7 +44,6 @@ export default function Testimonials() {
             collaborate better, and deliver work on time.
           </p>
 
-          {/* Over 1000 badge */}
           <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
             <div className="relative w-40 h-40 sm:w-60 sm:h-60 shrink-0">
               <svg
@@ -109,7 +85,7 @@ export default function Testimonials() {
           className="flex-1 w-full"
         >
           <div className="bg-[#FFFFFF] border-[3px] border-gray-100 rounded-2xl p-5 sm:p-8 flex flex-col gap-6 min-h-[320px] sm:min-h-[420px]">
-<AnimatePresence mode="wait">
+            <AnimatePresence mode="wait">
               <motion.p
                 key={current}
                 initial={{ opacity: 0, x: 30 }}
@@ -167,8 +143,6 @@ export default function Testimonials() {
               </div>
             </div>
           </div>
-
-
         </motion.div>
       </div>
     </section>

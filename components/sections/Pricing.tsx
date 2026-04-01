@@ -1,54 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, Tag, MoveUpRight, MoveRight, SquareCheckBig } from "lucide-react";
+import { Tag, MoveUpRight, MoveRight, SquareCheckBig } from "lucide-react";
+import { plans } from "@/data/plans";
 
 const fadeUp = {
   hidden: { y: 40, opacity: 0 },
   visible: { y: 0, opacity: 1 },
 };
-
-const plans = [
-  {
-    name: "Basic",
-    desc: "One request at a time. Pause or cancel anytime.",
-    price: "$19",
-    highlight: false,
-    features: [
-      "Up to 3 projects",
-      "Unlimited personal tasks",
-      "Basic task boards",
-      "Due dates & reminders",
-      "Mobile app access",
-    ],
-  },
-  {
-    name: "Standard",
-    desc: "One request at a time. Pause or cancel anytime.",
-    price: "$49",
-    highlight: true,
-    features: [
-      "Unlimited projects & tasks",
-      "Team collaboration & comments",
-      "Custom workflows & boards",
-      "Real-time progress tracking",
-      "200+ integrations",
-    ],
-  },
-  {
-    name: "Premium",
-    desc: "One request at a time. Pause or cancel anytime.",
-    price: "$99",
-    highlight: false,
-    features: [
-      "Everything in Pro",
-      "Advanced permissions & roles",
-      "Automation & rules",
-      "Advanced productivity analytics",
-      "Team workload management",
-    ],
-  },
-];
 
 export default function Pricing() {
   return (
